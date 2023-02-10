@@ -1,25 +1,18 @@
-using System;
-
-namespace programming
+static void Main(string[] args)
 {
-    class task6
+    static void renderTable(int n)
     {
-        static void Main(string[] args)
+        for (int i = 1; i <= n; i++)
         {
-            static void renderTable(int n)
+            for (int j = 1; j <= n; j++)
             {
-                for (int i = 1; i <= n; i++)
-                {
-                    for (int j = 1; j <= n; j++)
-                    {
-                        Console.Write($"{i * j}\t");
-                    }
-                    Console.WriteLine();
-                }
-                Console.ReadKey();
+                Console.Write($"{i * j}\t");
             }
-
-            renderTable(5);
+            Console.WriteLine();
         }
+        Console.ReadKey();
     }
+    
+    renderTable(5);
 }
+
